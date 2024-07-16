@@ -4,16 +4,244 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oranienbaum&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header id="header">
-      <nav class="nav"></nav>
+      <nav class="nav">
+        <img class="logo" src="./assets/logo/logo.png" alt="logo" />
+
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a class="nav_link" href="#!">Nasi lekarze</a>
+          </li>
+          <li class="nav_item"><a class="nav_link" href="#!">Kontakt</a></li>
+          <li class="nav_item drop_list">
+            <button class="nav_link drop_list_btn">Programs</button>
+            <div class="drop_content">
+              <a class="nav_link" href="#!">Program 1</a>
+              <a class="nav_link" href="#!">Program 2</a>
+              <a class="nav_link" href="#!">Program 3</a>
+            </div>
+          </li>
+          <li class="nav_item drop_list">
+            <button class="nav_link drop_list_btn">O nas</button>
+            <div class="drop_content">
+              <a class="nav_link" href="#!">O nas 1</a>
+              <a class="nav_link" href="#!">O nas 2</a>
+              <a class="nav_link" href="#!">O nas 3</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="header_right_div">
+          <img class="user_btn" src="./assets/header/user.png" alt="user" />
+
+          <button class="contact_nav_btn">Skontaktuj się z nami</button>
+
+          <select class="lang_selector" name="language" id="lang_selector">
+            <option value="PL" selected>PL</option>
+            <option value="ENG">ENG</option>
+            <option value="UA">UA</option>
+          </select>
+
+          <div class="theme_switcher">
+            <button>
+              <img
+                class="light_theme"
+                src="./assets/header/sun.png"
+                alt="light"
+              />
+            </button>
+
+            <button>
+              <img
+                class="dark_theme"
+                src="./assets/header/moon.png"
+                alt="dark"
+              />
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header_main">
+        <div class="header_text">
+          <h2 class="title">Aкції та Акційні пакети</h2>
+          <p class="text">
+            Ми завжди прагнемо підвищити рівень сервісу надаваних медичних
+            послуг, і вдячні вам за залишений позитивний відгук. Ми беремо до
+            уваги всі коментарі та побажання, які відносяться до нашої роботи.
+            Дякуємо за ваш вибір.
+          </p>
+        </div>
+        <div class="header_images">
+          <img
+            class="header_image_1"
+            src="./assets/header/header_img.png"
+            alt="people"
+          />
+          <div class="header_image_wrapper">
+            <img
+              class="header_image_2"
+              src="./assets/header/header_img_2.png"
+              alt="ambulance"
+            />
+          </div>
+        </div>
+      </div>
     </header>
 
-    <section id="packets"></section>
+    <section id="packets">
+      <h2 class="title">Пакети</h2>
 
-    <section id="promotional_offers"></section>
+      <div class="packets_list">
+        <div class="packet">
+          <h3 class="packet_title">УЗД всього організму для жінок</h3>
+          <ul class="packet_list">
+            <li class="packet_list_item">УЗД всього організму для жінок</li>
+            <li class="packet_list_item">Щитовидна залоза</li>
+            <li class="packet_list_item">Молочні залози</li>
+            <li class="packet_list_item">
+              Органи черевної порожнини ( печінка, жовчний міхур, підшлункова
+              залоза, селезінка)
+            </li>
+            <li class="packet_list_item">Нирки та наднирокові залози</li>
+            <li class="packet_list_item">Органи малого тазу</li>
+            <li class="packet_list_item">
+              Ціна — <span class="crossed_out">2600</span> грн.
+            </li>
+            <li class="packet_list_item">Ціна по акції — 1280 грн</li>
+          </ul>
+          <button class="packet_btn">Переглянути детальніше</button>
+        </div>
+
+        <div class="packet">
+          <h3 class="packet_title">УЗД всього організму для жінок</h3>
+          <ul class="packet_list">
+            <li class="packet_list_item">УЗД всього організму для жінок</li>
+            <li class="packet_list_item">Щитовидна залоза</li>
+            <li class="packet_list_item">Молочні залози</li>
+            <li class="packet_list_item">
+              Органи черевної порожнини ( печінка, жовчний міхур, підшлункова
+              залоза, селезінка)
+            </li>
+            <li class="packet_list_item">Нирки та наднирокові залози</li>
+            <li class="packet_list_item">Органи малого тазу</li>
+            <li class="packet_list_item">
+              Ціна — <span class="crossed_out">2600</span> грн.
+            </li>
+            <li class="packet_list_item">Ціна по акції — 1280 грн</li>
+          </ul>
+          <button class="packet_btn">Переглянути детальніше</button>
+        </div>
+
+        <div class="packet">
+          <h3 class="packet_title">УЗД всього організму для жінок</h3>
+          <ul class="packet_list">
+            <li class="packet_list_item">УЗД всього організму для жінок</li>
+            <li class="packet_list_item">Щитовидна залоза</li>
+            <li class="packet_list_item">Молочні залози</li>
+            <li class="packet_list_item">
+              Органи черевної порожнини ( печінка, жовчний міхур, підшлункова
+              залоза, селезінка)
+            </li>
+            <li class="packet_list_item">Нирки та наднирокові залози</li>
+            <li class="packet_list_item">Органи малого тазу</li>
+            <li class="packet_list_item">
+              Ціна — <span class="crossed_out">2600</span> грн.
+            </li>
+            <li class="packet_list_item">Ціна по акції — 1280 грн</li>
+          </ul>
+          <button class="packet_btn">Переглянути детальніше</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="promotional_offers">
+      <h2 class="title">Акційні пропозиції</h2>
+
+      <div class="offers_container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="swiper_pic"
+                src="./assets/swiper/swiper_pic.png"
+                alt="doctor"
+              />
+              <h2 class="swiper_title">
+                Акція "-40% на пробне заняття з кінезітерапії"
+              </h2>
+              <p class="swiper_text">
+                Маєте чудову нагоду потурбуватись про власне здоров’я за
+                вигідною пропозицією вартістю 680 408 грн.
+              </p>
+              <button class="swiper_btn">Переглянути детальніше</button>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                class="swiper_pic"
+                src="./assets/header/header_img.png"
+                alt="doctor"
+              />
+              <h2 class="swiper_title">
+                Акція "-40% на пробне заняття з кінезітерапії"
+              </h2>
+              <p class="swiper_text">
+                Маєте чудову нагоду потурбуватись про власне здоров’я за
+                вигідною пропозицією вартістю 680 408 грн.
+              </p>
+              <button class="swiper_btn">Переглянути детальніше</button>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                class="swiper_pic"
+                src="./assets/swiper/swiper_pic.png"
+                alt="doctor"
+              />
+              <h2 class="swiper_title">
+                Акція "-40% на пробне заняття з кінезітерапії"
+              </h2>
+              <p class="swiper_text">
+                Маєте чудову нагоду потурбуватись про власне здоров’я за
+                вигідною пропозицією вартістю 680 408 грн.
+              </p>
+              <button class="swiper_btn">Переглянути детальніше</button>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev">
+            <img
+              class="swiper_arrow"
+              src="./assets/swiper/nav_arrow.png"
+              alt="left-arrow"
+            />
+          </div>
+          <div class="swiper-button-next">
+            <img
+              class="swiper_arrow"
+              src="./assets/swiper/nav_arrow.png"
+              alt="right-arrow"
+            />
+          </div>
+        </div>
+        <div class="form"></div>
+      </div>
+    </section>
 
     <section id="price_list"></section>
 
@@ -22,5 +250,7 @@
     <footer id="footer"></footer>
 
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
