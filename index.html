@@ -16,10 +16,70 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header id="header">
       <nav class="nav">
+        <img class="logo" src="./assets/logo/logo.png" alt="logo" />
+
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a class="nav_link" href="#!">Nasi lekarze</a>
+          </li>
+          <li class="nav_item"><a class="nav_link" href="#!">Kontakt</a></li>
+          <li class="nav_item drop_list">
+            <button class="nav_link drop_list_btn">Programs</button>
+            <div class="drop_content">
+              <a class="nav_link" href="#!">Program 1</a>
+              <a class="nav_link" href="#!">Program 2</a>
+              <a class="nav_link" href="#!">Program 3</a>
+            </div>
+          </li>
+          <li class="nav_item drop_list">
+            <button class="nav_link drop_list_btn">O nas</button>
+            <div class="drop_content">
+              <a class="nav_link" href="#!">O nas 1</a>
+              <a class="nav_link" href="#!">O nas 2</a>
+              <a class="nav_link" href="#!">O nas 3</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="header_right_div">
+          <img class="user_btn" src="./assets/header/user.png" alt="user" />
+
+          <button class="contact_nav_btn">Skontaktuj się z nami</button>
+
+          <select class="lang_selector" name="language" id="lang_selector">
+            <option value="PL" selected>PL</option>
+            <option value="ENG">ENG</option>
+            <option value="UA">UA</option>
+          </select>
+
+          <div class="theme_switcher">
+            <button>
+              <img
+                class="light_theme"
+                src="./assets/header/sun.png"
+                alt="light"
+              />
+            </button>
+
+            <button>
+              <img
+                class="dark_theme"
+                src="./assets/header/moon.png"
+                alt="dark"
+              />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <button class="mob_nav_btn">
+        <img src="./assets/mob-nav/menu.png" alt="menu" />
+      </button>
+      <nav class="mob_nav">
         <img class="logo" src="./assets/logo/logo.png" alt="logo" />
 
         <ul class="nav_list">
@@ -450,19 +510,151 @@
       </div>
     </section>
 
-    <section id="contacts">
-      <img src="./assets/logo/logo.png" alt="logo" />
+    <section id="info">
+      <div class="info_text">
+        <img class="info_logo" src="./assets/logo/logo.png" alt="logo" />
 
-      <div class="logo_text">
-        <span class="orange_text">Twój</span>
-        <span class="default_text">kompleksowy przegląd</span>
-        <span class="orange_text">stanu zdrowia</span>
+        <div class="logo_text">
+          <span class="orange_text top_text">Twój</span>
+          <span class="default_text">kompleksowy przegląd</span>
+          <span class="orange_text bottom_text">stanu zdrowia</span>
+        </div>
       </div>
     </section>
 
-    <footer id="footer"></footer>
+    <section id="contacts">
+      <div class="contacts_container">
+        <div class="contact_block_1">
+          <p class="contact_text">W razie jakichkolwiek pytań, zadzwoń</p>
+          <p class="phone_number">+48 00 000 00 00</p>
+          <p class="contact_info">Pon. - Pt.: 07:00-20:00</p>
+        </div>
+
+        <div class="contact_block_2">
+          <img
+            class="map"
+            src="./assets/contacts/Warszawa_map.png"
+            alt="Warszawa_map"
+          />
+          <p class="map_info_text">Nasz adres</p>
+          <p class="adress">Lorem, <br />01-005 Warszawa</p>
+          <a href="#!"
+            ><img
+              class="tg_icon"
+              src="./assets/contacts/telegram.png"
+              alt="telegram"
+          /></a>
+        </div>
+
+        <div class="contact_block_3">
+          <p class="contact_text">Nasz adres e-mail</p>
+          <p class="email">info@lorem.center</p>
+
+          <div class="socials">
+            <a href="#!"
+              ><img src="./assets/contacts/instagram.png" alt="instagram"
+            /></a>
+            <a href="#!"
+              ><img src="./assets/contacts/facebook.png" alt="facebook"
+            /></a>
+            <a href="#!"
+              ><img src="./assets/contacts/linkedin.png" alt="linkedin"
+            /></a>
+            <a href="#!"
+              ><img src="./assets/contacts/youtube.png" alt="youtube"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer_block_1">
+        <p class="footer_text">
+          Jakiekolwiek wykorzystanie lub kopiowanie wybranych materiałów ze
+          strony jest dozwolone tylko za zgodą właściciela praw autorskich i
+          tylko z powołaniem się na źródło.
+        </p>
+        <div class="footer_cards_container">
+          <img
+            class="mastercard"
+            src="./assets/footer/mastercard.png"
+            alt="mastercard"
+          />
+          <img class="visa" src="./assets/footer/visa.png" alt="visa" />
+        </div>
+      </div>
+      <div class="footer_block_2">
+        <div class="footer_nav">
+          <ul class="footer_nav_list_1">
+            <li class="footer_nav_list_item">
+              <a class="footer_nav_list_link" href="#!">O nas</a>
+            </li>
+            <li class="footer_nav_list_item">
+              <a class="footer_nav_list_link" href="#!">Usługi</a>
+            </li>
+            <li class="footer_nav_list_item">
+              <a class="footer_nav_list_link" href="#!">Blog</a>
+            </li>
+            <li class="footer_nav_list_item">
+              <a class="footer_nav_list_link" href="#!">Praca</a>
+            </li>
+            <li class="footer_nav_list_item">
+              <a class="footer_nav_list_link" href="#!">Cennik</a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="footer_link" href="#!">Lokalizacja</a>
+
+        <div class="footer_socials">
+          <a class="footer_social" href="#!"
+            ><img src="./assets/footer/instagram.png" alt="instagram"
+          /></a>
+          <a class="footer_social" href="#!"
+            ><img src="./assets/footer/facebook.png" alt="facebook"
+          /></a>
+          <a class="footer_social" href="#!"
+            ><img src="./assets/footer/linkedin.png" alt="linkedin"
+          /></a>
+          <a class="footer_social" href="#!"
+            ><img src="./assets/footer/youtube.png" alt="youtube"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer_block_3">
+        <a class="footer_link" href="#!">Skontaktuj się z nami</a>
+      </div>
+      <div class="footer_block_4">
+        <div class="footer_nav">
+          <ul class="footer_nav_list_2">
+            <li class="footer_nav_list_item">
+              <a class="footer_nav_list_link" href="#!">Polityka Prywatnosci</a>
+            </li>
+            <li class="footer_nav_list_item">
+              <a class="footer_nav_list_link" href="#!">Regulamin</a>
+            </li>
+            <li class="footer_nav_list_item">
+              <a class="footer_nav_list_link" href="#!"
+                >Pezygotowanie do badan</a
+              >
+            </li>
+            <li class="footer_nav_list_item">
+              <a class="footer_nav_list_link" href="#!"
+                >Informacja o prawach pacjenta</a
+              >
+            </li>
+            <li class="footer_nav_list_item">
+              <a class="footer_nav_list_link" href="#!">Polityka cookie</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script src="./js/main.js"></script>
+    <script src="./js/nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
   </body>
