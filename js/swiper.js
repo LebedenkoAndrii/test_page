@@ -7,4 +7,11 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      navigation: false,
+    },
+  },
 });
