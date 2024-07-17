@@ -503,7 +503,91 @@ section {
 
 #price_list {
 }
+
+.price_list_container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 860px;
+  padding: 3em 6.5em;
+  gap: 1.6em;
+  border: 1px solid var(--orange);
+
+  margin-top: 48px;
+
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f6f5f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f6f5f2;
+}
+
+.price_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+.price_list_titles {
+  display: flex;
+  background: #faf4e8;
+}
+.price_list_title {
+  font-family: var(--oran);
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 2.5em;
+}
+.price_list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+.price_list_item {
+  display: flex;
+
+  font-family: var(--oran);
+  background: #f1efe9;
+
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 2em;
+  text-align: left;
+}
+.code {
+  width: 20%;
+  text-align: center;
+}
+.col_name {
+  width: 60%;
+
+  text-align: center;
+}
+.name {
+  width: 60%;
+  text-align: left;
+}
+.price {
+  width: 20%;
+  text-align: center;
+}
+
+/* Contacts */
 #contacts {
+  width: 735px;
+  height: 235px;
 }
 #footer {
 }
