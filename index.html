@@ -194,7 +194,7 @@
             <div class="swiper-slide">
               <img
                 class="swiper_pic"
-                src="./assets/header/header_img.png"
+                src="./assets/swiper/swiper_pic.png"
                 alt="doctor"
               />
               <h2 class="swiper_title">
@@ -239,7 +239,55 @@
             />
           </div>
         </div>
-        <div class="form"></div>
+
+        <form class="form">
+          <h2 class="form_title">Czekamy na Ciebie!</h2>
+
+          <div class="input_container">
+            <label for="fullname">Imię i nazwisko</label>
+            <input
+              id="fullname"
+              name="fullname"
+              type="text"
+              placeholder="fullname"
+            />
+          </div>
+
+          <div class="input_container">
+            <label for="tel">Phone</label>
+            <input
+              id="tel"
+              name="tel"
+              type="tel"
+              placeholder="+48 XXX XXX XXX"
+            />
+          </div>
+
+          <div class="input_container">
+            <label for="email">E-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="name@gmail.com"
+            />
+          </div>
+
+          <div>
+            <label class="checkbox_container"
+              ><input class="form_checkbox" type="checkbox" />
+              <span class="checkmark"></span
+            ></label>
+
+            <p class="form_text">
+              Wypełnienie formularza zgłoszeniowego jest równoznaczne z
+              wyrażeniem zgody na przetwarzanie danych osobowych, otrzymywanie
+              newslettera, oraz kontakt telefoniczny
+            </p>
+          </div>
+
+          <button class="form_btn">Wyślij</button>
+        </form>
       </div>
     </section>
 
