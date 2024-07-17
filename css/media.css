@@ -76,8 +76,18 @@
   .offers_container {
     flex-direction: column;
   }
+  .swiper {
+    width: 300px;
+  }
   .form {
     width: 300px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper_title {
+    line-height: 1em;
   }
   .price_list_container {
     padding: 0.2em 0.2em;
